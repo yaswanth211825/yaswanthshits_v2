@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "posts": [
+    {
+      "date": "2026-06-15",
+      "slug": "day-01-gym-vs-biryani-loop",
+      "path": "posts/2026-06-15/post.json",
+      "published": true
+    }
+  ]
+}

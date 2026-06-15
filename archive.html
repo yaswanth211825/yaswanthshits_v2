@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>All Shits // yaswanthshits.com</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&family=Inter:wght@500;700;900&family=Patrick+Hand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=posts-2" />
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+    <header class="topbar" aria-label="Site header">
+      <a class="brand" href="index.html#top" aria-label="yaswanthshits.com home">Y/S</a>
+      <nav aria-label="Main navigation">
+        <a href="index.html#intro">Me</a>
+        <a href="index.html#scraps">Scraps</a>
+        <a href="index.html#daily">Today</a>
+        <a href="archive.html" aria-current="page">Archive</a>
+      </nav>
+      <button class="panic-button" type="button">reset life</button>
+    </header>
+
+    <main id="top">
+      <section class="archive-hero" aria-labelledby="archive-title">
+        <p class="kicker">all shits // evidence locker</p>
+        <h1 id="archive-title">Archive</h1>
+        <p class="hero-line">
+          Every day gets one folder, one JSON file, and enough emotional damage
+          to render beautifully on mobile.
+        </p>
+      </section>
+
+      <section class="archive-list" id="archive-list" aria-live="polite">
+        <article class="archive-item">
+          <p class="kicker">loading</p>
+          <h2>Checking the evidence locker...</h2>
+        </article>
+      </section>
+    </main>
+
+    <button class="scroll-meter" type="button" aria-label="Scroll progress">
+      <span>0%</span>
+    </button>
+
+    <script src="script.js?v=posts-2"></script>
+  </body>
+</html>

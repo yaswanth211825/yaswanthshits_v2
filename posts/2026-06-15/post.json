@@ -1,0 +1,105 @@
+{
+  "version": 1,
+  "published": true,
+  "date": "2026-06-15",
+  "time": "2:00 AM",
+  "day": 1,
+  "slug": "day-01-gym-vs-biryani-loop",
+  "title": "Day 01: The 2 AM Gym vs Biryani Loop",
+  "kicker": "15 June // 2:00 AM",
+  "mood": "jobless, overdressed, gym-guilted",
+  "heroLine": "2.5K paid. Guilt activated.",
+  "buttonLabel": "Close & Go Back to Void",
+  "body": [
+    "My brain is completely not braining and sleep is absolutely not sleeping. My face is hosting a full acne festival, but somehow my stomach is untouched, fearless, and ready for war.",
+    "It is literally 2:00 in the morning. I looked into the cooker and saw pure biryani sitting there, staring back at me like destiny with masala. Come on. Let's eat.",
+    "Also, plot twist: morning is technically Day 01 at the gym. I have already paid 2.5K upfront, which means I did not join a gym. I bought a monthly subscription to guilt.",
+    "In the middle of all this, I am also jobless yet buying formals. Because apparently my bank balance is unemployed, but my outfit is preparing for appraisal season.",
+    "So this is the loop: biryani at 2 AM, gym in the morning, formals with no job, confidence at 4%, hope at 7%, delusion at full battery. Absolute tactical self-sabotage, but at least now it has documentation."
+  ],
+  "scraps": [
+    {
+      "type": "image",
+      "stamp": "01",
+      "size": "big",
+      "tone": "bill",
+      "title": "2.5K paid. Guilt activated.",
+      "text": "I did not join a gym. I purchased a monthly subscription to being judged by dumbbells.",
+      "image": {
+        "src": "posts/2026-06-15/gym-bill.webp",
+        "alt": "Cropped gym bill showing the 2500 rupee membership fee",
+        "width": 962,
+        "height": 406
+      }
+    },
+    {
+      "type": "note",
+      "stamp": "02",
+      "tone": "note",
+      "title": "Jobless yet buying formals",
+      "text": "No job. No offer letter. Still dressing like HR is hiding behind the trial-room curtain."
+    },
+    {
+      "type": "image",
+      "stamp": "03",
+      "tone": "portrait",
+      "title": "Corporate cosplay unlocked",
+      "text": "Income: pending. Shirt: serious. Pants: optimistic. Confidence: borrowed from future me.",
+      "image": {
+        "src": "posts/2026-06-15/formals.webp",
+        "alt": "Yaswanth trying formal clothes in a mirror selfie",
+        "width": 582,
+        "height": 1200
+      }
+    },
+    {
+      "type": "list",
+      "stamp": "04",
+      "tone": "receipt",
+      "title": "8 AM realme lens report",
+      "items": [
+        "Photographer: father",
+        "Device: realme, maximum truth mode",
+        "Background audio: \"Velli brush chey ra gadida\"",
+        "Face: politely pretending life is sorted"
+      ]
+    },
+    {
+      "type": "image",
+      "stamp": "05",
+      "size": "wide",
+      "tone": "realme",
+      "title": "Morning face, family direction",
+      "text": "At 8 AM, through my father's realme lens: \"Velli brush chey ra gadida.\" Cinema.",
+      "image": {
+        "src": "posts/2026-06-15/realme-morning.webp",
+        "alt": "Morning portrait taken through father's realme phone",
+        "width": 820,
+        "height": 1025
+      }
+    }
+  ],
+  "gallery": [
+    {
+      "src": "posts/2026-06-15/gym-bill.webp",
+      "alt": "Cropped gym membership bill",
+      "width": 962,
+      "height": 406,
+      "caption": "Exhibit A: 2.5K hostage situation."
+    },
+    {
+      "src": "posts/2026-06-15/formals.webp",
+      "alt": "Mirror selfie in formal clothes",
+      "width": 582,
+      "height": 1200,
+      "caption": "Jobless, but interview-ready for imaginary HR."
+    },
+    {
+      "src": "posts/2026-06-15/realme-morning.webp",
+      "alt": "Morning portrait photographed by father",
+      "width": 820,
+      "height": 1025,
+      "caption": "8 AM. Father's realme. \"Velli brush chey ra gadida.\""
+    }
+  ]
+}

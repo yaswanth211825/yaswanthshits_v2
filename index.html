@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>yaswanthshits.com</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&family=Inter:wght@500;700;900&family=Patrick+Hand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=posts-2" />
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+    <header class="topbar" aria-label="Site header">
+      <a class="brand" href="#top" aria-label="yaswanthshits.com home">Y/S</a>
+      <nav aria-label="Main navigation">
+        <a href="#intro">Me</a>
+        <a href="#scraps">Scraps</a>
+        <a href="#daily">Today</a>
+        <a href="archive.html">Archive</a>
+        <a href="#manifesto">Rules</a>
+      </nav>
+      <button class="panic-button" type="button">reset life</button>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="kicker">daily blog // public recovery arc</p>
+          <h1 id="hero-title">yaswanthshits.com</h1>
+          <p class="hero-line">
+            A scrapbook for bad decisions, tiny wins, unemployed thoughts,
+            sitcom binges, and the heroic attempt to become a functioning
+            adult before the Wi-Fi bill arrives.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-action" href="#scraps">start scrolling</a>
+            <a class="secondary-action" href="#daily">read today's damage</a>
+          </div>
+        </div>
+
+        <figure class="cover-card tilt-card">
+          <img
+            src="assets/scrapbook-cover.webp"
+            alt="Funny scrapbook collage cover for yaswanthshits.com"
+            width="1400"
+            height="788"
+            fetchpriority="high"
+          />
+          <figcaption>first draft cover: unhinged, but organized</figcaption>
+        </figure>
+      </section>
+
+      <section class="ticker" aria-label="Current status">
+        <div class="ticker-track" aria-hidden="true">
+          <span>the devara op</span>
+          <span>day 01 loading</span>
+          <span>watching sitcoms</span>
+          <span>unemployed</span>
+          <span>doomscrolling</span>
+          <span>wants to get better</span>
+          <span>will blog daily</span>
+          <span>the devara op</span>
+          <span>day 01 loading</span>
+          <span>watching sitcoms</span>
+          <span>unemployed</span>
+          <span>doomscrolling</span>
+          <span>wants to get better</span>
+          <span>will blog daily</span>
+        </div>
+      </section>
+
+      <section class="intro-card" id="intro" aria-labelledby="intro-title">
+        <div class="intro-badge">identity crisis, but premium</div>
+        <div>
+          <p class="kicker">public introduction</p>
+          <h2 id="intro-title">Devarayuktha Chaya Chaitanya</h2>
+          <p class="aka">a.k.a. Yaswanth Bopparaju // THE DEVARA OP</p>
+        </div>
+        <p>
+          I am the main character of a very low-budget comeback arc: currently
+          unemployed, heavily sitcom-certified, emotionally attached to biryani,
+          and trying to become better before my search history becomes my
+          biography.
+        </p>
+        <p>
+          This site is my daily evidence locker. One photo, one confession, one
+          joke, one tiny attempt to not lose to yesterday's version of me.
+        </p>
+      </section>
+
+      <section class="scroll-stage" id="scraps" aria-labelledby="scraps-title">
+        <div class="stage-intro">
+          <p class="kicker">daily scraps</p>
+          <h2 id="scraps-title">Your life, but taped to the internet.</h2>
+          <p>
+            Every blog entry becomes a scrap: one photo, one brutally honest
+            caption, one tiny proof that the day existed.
+          </p>
+        </div>
+
+        <div class="scrapbook" id="scrapbook" aria-live="polite">
+          <article class="scrap loading-scrap is-visible" data-stamp="...">
+            <div class="pin"></div>
+            <h3>Loading today's damage</h3>
+            <p>The scrapbook is checking the evidence locker.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="today" id="daily" aria-labelledby="daily-title">
+        <div id="daily-heading">
+          <p class="kicker" id="daily-kicker">Latest post</p>
+          <h2 id="daily-title">Day 01: The 2 AM Gym vs Biryani Loop</h2>
+        </div>
+        <article class="blog-entry" id="blog-entry" aria-live="polite">
+          <p>Loading the latest blog post...</p>
+        </article>
+      </section>
+
+      <section class="manifesto" id="manifesto" aria-labelledby="manifesto-title">
+        <p class="kicker">site rules</p>
+        <h2 id="manifesto-title">The scrapbook code</h2>
+        <div class="rule-grid">
+          <p><strong>01</strong> Be funny, but do not lie.</p>
+          <p><strong>02</strong> Post the ugly day too.</p>
+          <p><strong>03</strong> One image, one caption, one tiny win.</p>
+          <p><strong>04</strong> Replace shame with screenshots.</p>
+        </div>
+      </section>
+    </main>
+
+    <button class="scroll-meter" type="button" aria-label="Scroll progress">
+      <span>0%</span>
+    </button>
+
+    <script src="script.js?v=posts-2"></script>
+  </body>
+</html>

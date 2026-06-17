@@ -157,6 +157,8 @@ function renderGallery(gallery) {
 
   gallery.forEach((item) => {
     const figure = document.createElement("figure");
+    const tone = normalizeText(item.tone);
+    if (tone) figure.dataset.tone = tone;
     const image = createImage(item);
     if (!image) return;
 
@@ -257,22 +259,35 @@ async function loadArchive() {
     const posts = await Promise.all(
       metas.map(async (meta) => {
         try {
-          return postSummary(await fetchJson(meta.path), meta);
+          const post = await fetchJson(meta.path);
+          return { meta, post: normalizePost(post) };
         } catch {
-          return postSummary(null, meta);
+          return { meta, post: normalizePost(null) };
         }
       })
     );
 
     archiveList.replaceChildren(
-      ...posts.map((post) => {
+      ...posts.map(({ meta, post }) => {
         const article = createElement("article", "archive-item");
-        article.append(createElement("p", "kicker", post.date));
-        article.append(createElement("h2", "", post.title));
-        article.append(createElement("p", "", post.heroLine));
-        article.append(createElement("p", "", `Mood: ${post.mood}`));
-        const link = createElement("a", "", "read latest layout");
-        link.href = post.href;
+        article.append(createElement("p", "kicker", post.kicker || meta.date || "Undated"));
+        article.append(createElement("h2", "", post.title || normalizeText(meta.title, "Untitled")));
+
+        // Full body paragraphs
+        post.body.forEach((paragraph) => {
+          article.append(createElement("p", "", paragraph));
+        });
+
+        // Gallery (if any)
+        const gallery = renderGallery(post.gallery);
+        if (gallery) article.append(gallery);
+
+        // Small mood/hero line footnote
+        if (post.heroLine) article.append(createElement("p", "", post.heroLine));
+        if (post.mood) article.append(createElement("p", "", `Mood: ${post.mood}`));
+
+        const link = createElement("a", "", "Open post");
+        link.href = post.slug ? `index.html?post=${encodeURIComponent(post.slug)}#daily` : (meta?.path || "index.html#daily");
         article.append(link);
         return article;
       })

@@ -273,22 +273,63 @@ async function loadArchive() {
         article.append(createElement("p", "kicker", post.kicker || meta.date || "Undated"));
         article.append(createElement("h2", "", post.title || normalizeText(meta.title, "Untitled")));
 
-        // Full body paragraphs
+        // Collapsible content wrapper (show preview, expand on click)
+        const content = createElement("div", "archive-content");
+        content.style.overflow = "hidden";
+        content.style.maxHeight = "6.6rem"; // ~2-3 lines depending on font
+        content.style.transition = "max-height 300ms ease";
+
+        // Add paragraphs into the content wrapper
         post.body.forEach((paragraph) => {
-          article.append(createElement("p", "", paragraph));
+          content.append(createElement("p", "", paragraph));
         });
 
-        // Gallery (if any)
+        // Add gallery inside content so it expands together
         const gallery = renderGallery(post.gallery);
-        if (gallery) article.append(gallery);
+        if (gallery) content.append(gallery);
 
-        // Small mood/hero line footnote
+        article.append(content);
+
+        // Footnotes outside collapsed area
         if (post.heroLine) article.append(createElement("p", "", post.heroLine));
         if (post.mood) article.append(createElement("p", "", `Mood: ${post.mood}`));
 
+        // Toggle button to expand/collapse
+        const toggle = createElement("button", "archive-toggle", "Read more");
+        toggle.type = "button";
+        toggle.setAttribute("aria-expanded", "false");
+        toggle.addEventListener("click", () => {
+          const expanded = toggle.getAttribute("aria-expanded") === "true";
+          if (expanded) {
+            // collapse
+            content.style.maxHeight = "6.6rem";
+            toggle.textContent = "Read more";
+            toggle.setAttribute("aria-expanded", "false");
+            article.classList.remove("is-expanded");
+          } else {
+            // expand to full height
+            content.style.maxHeight = content.scrollHeight + "px";
+            toggle.textContent = "Collapse";
+            toggle.setAttribute("aria-expanded", "true");
+            article.classList.add("is-expanded");
+
+            // ensure the maxHeight grows if images load later
+            const imgs = content.querySelectorAll("img");
+            imgs.forEach((img) => img.addEventListener("load", () => {
+              if (toggle.getAttribute("aria-expanded") === "true") {
+                content.style.maxHeight = content.scrollHeight + "px";
+              }
+            }));
+          }
+        });
+
+        article.append(toggle);
+
+        // Link to open full post separately
         const link = createElement("a", "", "Open post");
         link.href = post.slug ? `index.html?post=${encodeURIComponent(post.slug)}#daily` : (meta?.path || "index.html#daily");
         article.append(link);
+
         return article;
       })
     );

@@ -1,0 +1,136 @@
+{
+  "version": 1,
+  "published": true,
+  "date": "2026-06-17",
+  "time": "2:53 PM",
+  "day": 3,
+  "slug": "day-03-fauda-gossip-gym-detox",
+  "title": "Day 03: Fauda, Gossip Court & Pani Poori Recovery",
+  "kicker": "17 June // Day 03",
+  "mood": "Fauda takeover, gossip damage, gym-town reunion, detox bravery",
+  "heroLine": "HIMYM forgotten. Fauda running. Self-respect buffering on call.",
+  "buttonLabel": "Close & Go Back to Void",
+  "body": [
+    "Day 03 started with one clear development: I have completely forgotten about HIMYM. Yesterday it was sitcom comfort. Today I am full throttle into Fauda like my brain got recruited without background verification.",
+    "But life is a badly written interval block. The special friend I mentioned yesterday called. Actually, I had told her friend that I wanted to say something, then immediately said leave it. Apparently leave it is not a sentence. It is a legal notice. Gossip court opened. Attendance compulsory.",
+    "For 1h 27m 48s, I sat there and professionally sabotaged myself and my self-respect while she and her great supportive friend conducted the hearing. I do not want to generalise, but gossip curiosity has better battery backup than my phone.",
+    "And then, boom. She is married, guys. Public blog version: I am fine. Honest version: my brain briefly opened seventeen old tabs, all playing different sad songs. But BUT, gossip tho rukhna nahi chahiye yaar. The show must continue, even if the hero is emotionally buffering.",
+    "The thing is, for years there was not even a proper happy birthday wish. Not one clean little birthday wish that said yes, I remember you exist. And still, one chat notification comes and I am replying like a dog at the end of its own leash. Behind the screen it feels like connection. Later you realise it was mostly dopamine wearing a friendship costume.",
+    "I am not writing the whole private courtroom here. Some stories are too heavy for a public blog and too stupid for my own peace. So today I am converting pain into content, because apparently that is my new wellness plan.",
+    "Evening came and I was so tired I almost thought of quitting the day. But we have a backup, and the name is su su Sudarshan. Somehow that sentence alone has more discipline than my entire schedule.",
+    "Surprisingly, the gym is full of my childhood people. Gowtham comes in the morning. MLA also comes in the morning. For context, Gowtham is the son of our chairman from school days, fifth class lore maybe. We do not have that old rapport now, but still, this gym is basically the richest reunion hall in town with dumbbells.",
+    "Diet update: what the actual hell am I doing? I go to gym and then eat pani poori and sweets like that is the official post-workout meal. Protein shake? No. Street food with confidence. My body is asking for recovery and I am giving it tamarind water and sugar.",
+    "And about yesterday's promise: web development tutorial. TBH, it is way tougher than I thought. My attention span is very small. So today I did one brave thing: deleted Telegram, X, and Instagram. Social media detox has entered the chat. Let us see tomorrow whether I become a developer or just a man staring at an empty phone."
+  ],
+  "scraps": [
+    {
+      "type": "image",
+      "stamp": "01",
+      "size": "wide",
+      "tone": "call",
+      "title": "Call log, court proof",
+      "text": "Incoming call. 1h 27m 48s. Self-respect appeared through video conference and left early.",
+      "image": {
+        "src": "posts/2026-06-17/incoming-call-1h27m.webp",
+        "alt": "Phone call log showing an incoming call at Tuesday 2:53 PM lasting 1 hour 27 minutes 48 seconds",
+        "width": 1080,
+        "height": 389,
+        "fit": "contain"
+      }
+    },
+    {
+      "type": "image",
+      "stamp": "02",
+      "tone": "chaos",
+      "title": "Fauda plus gossip court",
+      "text": "HIMYM got ghosted. Fauda took over. Then one leave it became a full investigation.",
+      "image": {
+        "src": "posts/2026-06-17/fauda-gossip-court.webp",
+        "alt": "Scrapbook poster about HIMYM being forgotten, Fauda taking over, and a gossip investigation",
+        "width": 1200,
+        "height": 900
+      }
+    },
+    {
+      "type": "list",
+      "stamp": "03",
+      "tone": "receipt",
+      "title": "Emotional damage audit",
+      "items": [
+        "HIMYM: abandoned",
+        "Fauda: promoted to main character",
+        "One leave it: converted into investigation",
+        "Call duration: 1h 27m 48s",
+        "Self-respect: requested sick leave"
+      ]
+    },
+    {
+      "type": "image",
+      "stamp": "04",
+      "tone": "gym",
+      "title": "Town gym alumni meet",
+      "text": "Childhood friends, morning batch legends, and one tired fellow trying to act normal near dumbbells.",
+      "image": {
+        "src": "posts/2026-06-17/gym-town-rich-alumni.webp",
+        "alt": "Scrapbook poster about a town gym filled with childhood friends and morning batch legends",
+        "width": 1200,
+        "height": 900
+      }
+    },
+    {
+      "type": "image",
+      "stamp": "05",
+      "tone": "receipt",
+      "title": "Post-workout crime scene",
+      "text": "Gym done. Pani poori done. Sweet done. Telegram, X, Instagram deleted with fake military discipline.",
+      "image": {
+        "src": "posts/2026-06-17/detox-pani-puri-workout.webp",
+        "alt": "Scrapbook poster about pani poori after gym, web development panic, and deleting social media apps",
+        "width": 1200,
+        "height": 900
+      }
+    },
+    {
+      "type": "note",
+      "stamp": "06",
+      "tone": "note",
+      "title": "Developer arc loading",
+      "text": "Web development is harder than expected. Attention span is smaller than expected. Still, apps deleted. Small win filed."
+    }
+  ],
+  "gallery": [
+    {
+      "src": "posts/2026-06-17/incoming-call-1h27m.webp",
+      "tone": "call",
+      "alt": "Incoming call screenshot showing a call duration of 1 hour 27 minutes 48 seconds",
+      "width": 1080,
+      "height": 389,
+      "caption": "Exhibit A: one incoming call casually deleting the afternoon.",
+      "fit": "contain"
+    },
+    {
+      "src": "posts/2026-06-17/fauda-gossip-court.webp",
+      "tone": "chaos",
+      "alt": "Poster about Fauda, gossip court, and emotional buffering",
+      "width": 1200,
+      "height": 900,
+      "caption": "HIMYM forgotten. Fauda promoted. Gossip court assembled."
+    },
+    {
+      "src": "posts/2026-06-17/gym-town-rich-alumni.webp",
+      "tone": "gym",
+      "alt": "Poster about childhood friends appearing at the same gym",
+      "width": 1200,
+      "height": 900,
+      "caption": "Gym or town alumni reunion? Investigation ongoing."
+    },
+    {
+      "src": "posts/2026-06-17/detox-pani-puri-workout.webp",
+      "tone": "receipt",
+      "alt": "Poster about pani poori, sweets, web development, and social media detox",
+      "width": 1200,
+      "height": 900,
+      "caption": "Post-workout meal: pani poori. Post-panic move: delete apps."
+    }
+  ]
+}

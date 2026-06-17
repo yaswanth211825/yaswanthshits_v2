@@ -1,0 +1,112 @@
+{
+  "version": 1,
+  "published": true,
+  "date": "2026-06-16",
+  "time": "12:56 AM",
+  "day": 2,
+  "slug": "day-02-gym-fauda-snack-betrayal",
+  "title": "Day 02: Gym Happened, Diet Filed a Complaint",
+  "kicker": "16 June // Day 02",
+  "mood": "gym attended, diet betrayed, watch history confused",
+  "heroLine": "Went to gym. Then mal-poori entered the storyline.",
+  "buttonLabel": "Close & Go Back to Void",
+  "body": [
+    "Day 02 report: I actually went to the gym. Please record this in history before my future self denies it.",
+    "Instead of continuing HIMYM, I made the most opposite possible decision and started watching Fauda. Currently S3 E1. One day sitcom comfort, next day geopolitical stress. My watch history is not a genre. It is a medical file.",
+    "Then I watched a Zulu-language movie on Netflix. I do not know the language. I do not know the plan. I do not know what I am doing at this point. But I did go to the gym, so legally I am improving.",
+    "Diet was supposed to happen. Instead, I ate mal-poori, a paneer puff, and Punnayya chekka masala. My bestest friend told me she used to be in Guntur, where this stuff is famous, and honestly wah wah wah, super taste. Comparatively expensive in my town though. Small-town snack, metro-city attitude.",
+    "Also I got another friend and, oh gawd, why is she like that? She has this protective man-shield system: identify intentions, interrogate person, innovate reasons. I actually appreciate it. Some people have antivirus for laptops. She has antivirus for men.",
+    "Just now I remembered I made a super hard false promise that I would learn web development. This is not funny, guys. Am I the man up to it? Am I a man of word? Wait for two working days.",
+    "Also, I realised my face, body, and skin are all running different color schemes. I am genuinely curious how girls stay ek dham perfect all the time. Not all, obviously. But my bestest friend? Gawd, damn beautiful. I should have never fallen in love with her. Okay okay, enough drama.",
+    "PS: don't judge me. I was too young to understand where the lines were at that time. Growth is awkward, but at least now it has a blog."
+  ],
+  "scraps": [
+    {
+      "type": "image",
+      "stamp": "01",
+      "size": "big",
+      "tone": "weight",
+      "title": "65.15 kg entered the chat",
+      "text": "Scale said 65.15. Gym attendance submitted as evidence.",
+      "image": {
+        "src": "posts/2026-06-16/weight-65kg-scale.webp",
+        "alt": "Weight scale showing 65.15 kilograms after gym day",
+        "width": 980,
+        "height": 635
+      }
+    },
+    {
+      "type": "image",
+      "stamp": "02",
+      "tone": "portrait",
+      "title": "Fitness model, before edition",
+      "text": "The gym is trying to build a fitness model, but the backend is entirely fueled by street food",
+      "image": {
+        "src": "posts/2026-06-16/before-fitness-model.webp",
+        "alt": "Before fitness progress photo standing in a room",
+        "width": 760,
+        "height": 1257
+      }
+    },
+    {
+      "type": "image",
+      "stamp": "03",
+      "size": "wide",
+      "tone": "chaos",
+      "title": "Watch history needs counselling",
+      "text": "HIMYM paused. Fauda S3 E1 started. Zulu movie also happened. Brain has no genre discipline.",
+      "image": {
+        "src": "posts/2026-06-16/fauda-snack-sidequest.webp",
+        "alt": "Scrapbook graphic about Fauda season 3 episode 1, a Zulu movie, and snack chaos",
+        "width": 1200,
+        "height": 900
+      }
+    },
+    {
+      "type": "list",
+      "stamp": "04",
+      "tone": "receipt",
+      "title": "Diet betrayal audit",
+      "items": [
+        "Gym: attended",
+        "Diet: attacked by mal-poori",
+        "Paneer puff: accepted bribe",
+        "Punnayya chekka masala: wah wah wah",
+        "Wallet: complained about town pricing"
+      ]
+    },
+    {
+      "type": "note",
+      "stamp": "05",
+      "tone": "note",
+      "title": "Two working days warning",
+      "text": "I promised I would learn web development. If I disappear, please interrogate my intentions."
+    }
+  ],
+  "gallery": [
+    {
+      "src": "posts/2026-06-16/weight-65kg-scale.webp",
+      "tone": "weight",
+      "alt": "Weight scale showing 65.15 kilograms",
+      "width": 980,
+      "height": 635,
+      "caption": "65.15 kg. Court-admissible gym evidence."
+    },
+    {
+      "src": "posts/2026-06-16/before-fitness-model.webp",
+      "tone": "portrait",
+      "alt": "Before fitness model progress photo",
+      "width": 760,
+      "height": 1257,
+      "caption": "Fitness model, before. Very before."
+    },
+    {
+      "src": "posts/2026-06-16/fauda-snack-sidequest.webp",
+      "tone": "chaos",
+      "alt": "Scrapbook graphic about Fauda, a Zulu movie, and snacks",
+      "width": 1200,
+      "height": 900,
+      "caption": "Fauda S3 E1, Zulu movie, snacks. No further questions."
+    }
+  ]
+}

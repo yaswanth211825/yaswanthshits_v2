@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "published": false,
+  "date": "YYYY-MM-DD",
+  "time": "HH:MM AM",
+  "day": 3,
+  "slug": "day-03-short-readable-slug",
+  "title": "Day 03: Title Goes Here",
+  "kicker": "17 June // Day 03",
+  "mood": "short mood line",
+  "heroLine": "One-line punchline for archive cards.",
+  "buttonLabel": "Close & Go Back to Void",
+  "body": [
+    "Paragraph one.",
+    "Paragraph two.",
+    "Paragraph three."
+  ],
+  "scraps": [
+    {
+      "type": "image",
+      "stamp": "01",
+      "size": "big",
+      "tone": "photo",
+      "title": "Scrap title",
+      "text": "Short caption.",
+      "image": {
+        "src": "posts/YYYY-MM-DD/image-name.webp",
+        "alt": "Useful description of the image",
+        "width": 1200,
+        "height": 900,
+        "fit": "cover"
+      }
+    },
+    {
+      "type": "note",
+      "stamp": "02",
+      "tone": "note",
+      "title": "Note title",
+      "text": "Short note."
+    },
+    {
+      "type": "list",
+      "stamp": "03",
+      "tone": "receipt",
+      "title": "List title",
+      "items": [
+        "Item one",
+        "Item two"
+      ]
+    }
+  ],
+  "gallery": [
+    {
+      "src": "posts/YYYY-MM-DD/image-name.webp",
+      "tone": "photo",
+      "alt": "Useful description of the image",
+      "width": 1200,
+      "height": 900,
+      "caption": "Gallery caption.",
+      "fit": "cover"
+    }
+  ]
+}

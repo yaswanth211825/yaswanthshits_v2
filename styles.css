@@ -493,17 +493,18 @@ h3 {
   filter: saturate(1.04) contrast(1.02);
 }
 
-.bill-media {
-  aspect-ratio: 16 / 7;
+.scrap-media {
+  aspect-ratio: var(--image-ratio, 4 / 3);
+}
+
+.scrap-media[data-fit="contain"] img,
+.blog-gallery figure[data-fit="contain"] img {
+  object-fit: contain;
+  background: var(--paper);
+}
+
+.scrap-media[data-tone="bill"] {
   background: #fff7db;
-}
-
-.portrait-media {
-  aspect-ratio: 3 / 4;
-}
-
-.realme-media {
-  aspect-ratio: 4 / 3;
 }
 
 .fake-photo {
@@ -635,7 +636,27 @@ h3 {
   line-height: 1.1;
 }
 
-.archive-item a {
+.archive-content {
+  display: grid;
+  max-height: 7.2rem;
+  gap: 0.85rem;
+  overflow: hidden;
+  transition: max-height 300ms ease;
+}
+
+.archive-item.is-expanded .archive-content {
+  max-height: none;
+}
+
+.archive-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.archive-item a,
+.archive-toggle {
   justify-self: start;
   display: inline-flex;
   min-height: max(44px, var(--tap));
@@ -650,6 +671,12 @@ h3 {
   box-shadow: 0.25rem 0.25rem 0 var(--ink);
   font-weight: 900;
   text-transform: uppercase;
+  cursor: pointer;
+}
+
+.archive-toggle {
+  background: var(--yellow);
+  color: var(--ink);
 }
 
 .blog-entry {
@@ -679,18 +706,9 @@ h3 {
 
 .blog-gallery img {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: var(--image-ratio, 4 / 3);
   object-fit: cover;
   border: calc(var(--border-heavy) * 0.75) solid var(--ink);
-}
-
-.blog-gallery figure:nth-child(1) img {
-  aspect-ratio: 16 / 7;
-}
-
-.blog-gallery figure:nth-child(2) img,
-.blog-gallery figure:nth-child(3) img {
-  aspect-ratio: 4 / 5;
 }
 
 .blog-gallery figcaption {

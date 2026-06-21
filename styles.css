@@ -842,12 +842,9 @@ h3 {
   }
 
   .stage-intro {
-    position: sticky;
-    top: calc(var(--header-offset) + 5.125rem);
-    max-height: min(85vh, 32rem);
-    overflow-y: auto;
-    overscroll-behavior: contain;
-    scrollbar-width: thin;
+    position: relative;
+    max-height: none;
+    overflow-y: visible;
   }
 
   .scrapbook {
@@ -855,13 +852,24 @@ h3 {
   }
 
   .scrap {
-    grid-column: span 4;
     width: 100%;
     transform: translate3d(0, 5.625rem, 0) rotate(var(--tilt)) scale(0.92);
   }
 
-  .is-big {
-    grid-column: span 5;
+  .scrap:nth-child(odd) {
+    grid-column: 1 / span 4;
+  }
+
+  .scrap:nth-child(even) {
+    grid-column: 5 / span 4;
+  }
+
+  .scrap.is-big:nth-child(odd) {
+    grid-column: 1 / span 5;
+  }
+
+  .scrap.is-big:nth-child(even) {
+    grid-column: 4 / span 5;
   }
 
   .is-wide {

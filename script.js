@@ -257,13 +257,12 @@ function renderPost(postInput, meta) {
   }
 
   if (dom.blogEntry) {
-    const button = el("button", "void-button", post.buttonLabel);
-    button.type = "button";
-
-    const nodes = [button];
+    const nodes = [];
     const galleryAfter = Math.min(4, Math.max(1, post.body.length - 1));
     post.body.forEach((paragraph, index) => {
-      nodes.push(el("p", "", paragraph));
+      const p = el("p", "");
+      p.innerHTML = paragraph;
+      nodes.push(p);
       if (index + 1 === galleryAfter) {
         const gallery = renderGallery(post.gallery);
         if (gallery) nodes.push(gallery);
@@ -301,32 +300,13 @@ function renderArchiveCard(post) {
   article.append(el("p", "kicker", post.kicker || post.date || "Undated"));
   article.append(el("h2", "", post.title));
 
-  const contentId = `archive-${post.slug || post.date || Math.random().toString(36).slice(2)}`;
-  const content = el("div", "archive-content");
-  content.id = contentId;
-  post.body.forEach((paragraph) => content.append(el("p", "", paragraph)));
-  const gallery = renderGallery(post.gallery);
-  if (gallery) content.append(gallery);
-  article.append(content);
-
   article.append(el("p", "archive-line", post.heroLine));
   article.append(el("p", "archive-line", `Mood: ${post.mood}`));
 
   const actions = el("div", "archive-actions");
-  const toggle = el("button", "archive-toggle", "Read full blog");
-  toggle.type = "button";
-  toggle.setAttribute("aria-expanded", "false");
-  toggle.setAttribute("aria-controls", contentId);
-  toggle.addEventListener("click", () => {
-    const expanded = toggle.getAttribute("aria-expanded") === "true";
-    toggle.setAttribute("aria-expanded", String(!expanded));
-    toggle.textContent = expanded ? "Read full blog" : "Collapse";
-    article.classList.toggle("is-expanded", !expanded);
-  });
-
-  const link = el("a", "", "Open post");
+  const link = el("a", "", "Read Post");
   link.href = post.slug ? `index.html?post=${encodeURIComponent(post.slug)}#daily` : "index.html#daily";
-  actions.append(toggle, link);
+  actions.append(link);
   article.append(actions);
   return article;
 }

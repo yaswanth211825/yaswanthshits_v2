@@ -122,6 +122,31 @@ function normalizePost(post, meta = {}) {
     ? post.gallery.slice(0, APP.maxGalleryItems).map(normalizeImage).filter(Boolean)
     : [];
 
+  let embedUrl = post.nowPlaying && typeof post.nowPlaying === "object" ? text(post.nowPlaying.embedUrl) : "";
+  if (embedUrl) {
+    if (embedUrl.includes("open.spotify.com") && !embedUrl.includes("/embed/")) {
+      try {
+        const urlObj = new URL(embedUrl);
+        const parts = urlObj.pathname.split("/").filter(Boolean);
+        if (parts.length >= 2) {
+          const type = parts[parts.length - 2];
+          const id = parts[parts.length - 1];
+          embedUrl = `https://open.spotify.com/embed/${type}/${id}?utm_source=generator`;
+        }
+      } catch (e) {
+        console.warn("Failed to parse Spotify URL:", e);
+      }
+    }
+  }
+
+  const nowPlaying = post.nowPlaying && typeof post.nowPlaying === "object"
+    ? {
+        label: text(post.nowPlaying.label, "Currently obsessed with"),
+        embedUrl: embedUrl,
+        type: ["track", "playlist"].includes(post.nowPlaying.type) ? post.nowPlaying.type : "track",
+      }
+    : null;
+
   return {
     date: text(post.date, text(meta.date)),
     slug: text(post.slug, text(meta.slug)),
@@ -133,6 +158,7 @@ function normalizePost(post, meta = {}) {
     body: body.length ? body : FALLBACK_POST.body,
     scraps: scraps.length ? scraps : FALLBACK_POST.scraps.map(normalizeScrap),
     gallery,
+    nowPlaying,
   };
 }
 
@@ -272,8 +298,64 @@ function renderPost(postInput, meta) {
     dom.blogEntry.replaceChildren(...nodes);
   }
 
+  renderNowPlaying(post.nowPlaying);
+
   setupRevealObserver();
   requestScrollMeterUpdate();
+}
+
+function renderNowPlaying(nowPlaying) {
+  const playerContainer = document.getElementById("now-playing-player");
+  const labelElement = document.getElementById("now-playing-label");
+
+  if (!playerContainer) return; // Not on homepage
+
+  if (!nowPlaying || !nowPlaying.embedUrl) {
+    if (labelElement) labelElement.textContent = "Nothing queued today";
+    playerContainer.innerHTML = `<p class="music-loading">Silence in the tape deck. Check back tomorrow.</p>`;
+    return;
+  }
+
+  if (labelElement) labelElement.textContent = nowPlaying.label;
+
+  const iframe = document.createElement("iframe");
+  iframe.src = nowPlaying.embedUrl;
+  iframe.width = "100%";
+  iframe.height = "152";
+  iframe.frameBorder = "0";
+  iframe.allowFullscreen = "";
+  iframe.allow = "autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture";
+  iframe.loading = "lazy";
+  iframe.style.border = "none";
+
+  playerContainer.replaceChildren(iframe);
+}
+
+function updateStats(index) {
+  const postsCountElement = document.getElementById("stat-total-posts");
+  const daysActiveElement = document.getElementById("stat-days-blogged");
+
+  if (!postsCountElement || !daysActiveElement) return; // Not on homepage
+
+  const posts = publishedPosts(index);
+  postsCountElement.textContent = posts.length;
+
+  if (posts.length === 0) {
+    daysActiveElement.textContent = 0;
+    return;
+  }
+
+  const dates = posts.map((p) => Date.parse(p.date)).filter(Number.isFinite);
+  if (dates.length === 0) {
+    daysActiveElement.textContent = posts.length;
+    return;
+  }
+  const minDate = Math.min(...dates);
+  const maxDate = Math.max(...dates);
+  const diffTime = Math.abs(maxDate - minDate);
+  const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)) + 1;
+
+  daysActiveElement.textContent = diffDays;
 }
 
 async function loadPostByMeta(meta) {
@@ -286,6 +368,7 @@ async function loadHomePost() {
 
   try {
     const index = await fetchJson(APP.postIndexPath);
+    updateStats(index);
     const meta = selectPostMeta(index);
     if (!meta) throw new Error("No published posts found");
     renderPost(await loadPostByMeta(meta), meta);
@@ -300,8 +383,11 @@ function renderArchiveCard(post) {
   article.append(el("p", "kicker", post.kicker || post.date || "Undated"));
   article.append(el("h2", "", post.title));
 
-  article.append(el("p", "archive-line", post.heroLine));
-  article.append(el("p", "archive-line", `Mood: ${post.mood}`));
+  article.append(el("p", "archive-line hero-line", post.heroLine));
+  
+  const moodP = el("p", "archive-line mood-tag");
+  moodP.innerHTML = `🏷️ Mood: <em>${post.mood}</em>`;
+  article.append(moodP);
 
   const actions = el("div", "archive-actions");
   const link = el("a", "", "Read Post");

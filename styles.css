@@ -681,11 +681,17 @@ h3 {
 
 .blog-entry {
   display: grid;
-  gap: clamp(0.85rem, 3vw, 1rem);
+  gap: clamp(1rem, 3.5vw, 1.35rem);
+  max-width: 48rem;
+  margin-inline: auto;
+  width: 100%;
 }
 
 .blog-entry p {
   margin: 0;
+  position: relative;
+  padding-left: clamp(0.75rem, 2.5vw, 1.25rem);
+  border-left: 3px solid rgba(23, 17, 15, 0.15);
 }
 
 .blog-gallery {
@@ -895,8 +901,7 @@ h3 {
   }
 
   .today {
-    grid-template-columns: minmax(0, 1fr) minmax(18rem, 0.85fr);
-    align-items: end;
+    align-items: stretch;
   }
 
   .blog-gallery {
@@ -949,4 +954,266 @@ h3 {
     transform: rotate(var(--tilt, 0deg));
     will-change: auto;
   }
+}
+
+#daily-heading {
+  text-align: center;
+  max-width: 48rem;
+  margin-inline: auto;
+  margin-bottom: clamp(1.5rem, 5vw, 2.5rem);
+  border-bottom: 0.125rem dashed rgba(23, 17, 15, 0.18);
+  padding-bottom: clamp(1rem, 3vw, 1.5rem);
+}
+
+#daily-heading h2 {
+  font-family: Bangers, fantasy;
+  font-size: clamp(2rem, 8vw, 3.25rem);
+  line-height: 1.05;
+  margin-top: 0.5rem;
+}
+
+/* Stats Section */
+.stats-section {
+  margin-block: clamp(3rem, 10vw, 6rem);
+  padding: clamp(1.25rem, 5vw, 2.875rem);
+  border: var(--border-heavy) solid var(--ink);
+  border-radius: var(--radius);
+  background: #dcfce7;
+  box-shadow: clamp(0.45rem, 1.8vw, 0.625rem) clamp(0.45rem, 1.8vw, 0.625rem) 0 var(--ink);
+  transform: rotate(0.4deg);
+}
+
+.stats-section h2 {
+  font-family: Bangers, fantasy;
+  font-size: clamp(2.65rem, 13vw, 5.2rem);
+  text-shadow: 0.055em 0.055em 0 #fff;
+  margin-bottom: clamp(1.5rem, 5vw, 2.5rem);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: clamp(1rem, 4vw, 1.5rem);
+}
+
+.stat-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(1rem, 4vw, 1.5rem);
+  border: var(--border-heavy) solid var(--ink);
+  border-radius: var(--radius);
+  background: #fff;
+  box-shadow: 0.35rem 0.35rem 0 var(--ink);
+  text-align: center;
+  transform: rotate(var(--stat-tilt, -0.6deg));
+}
+
+.stat-card:nth-child(even) {
+  --stat-tilt: 0.5deg;
+  background: #fffbdf;
+}
+
+.stat-card strong {
+  font-family: Bangers, fantasy;
+  font-size: clamp(2.5rem, 8vw, 3.8rem);
+  line-height: 1;
+  color: var(--blue);
+  margin-bottom: 0.25rem;
+}
+
+.stat-card span {
+  font-family: Patrick Hand, cursive;
+  font-size: clamp(1.1rem, 4vw, 1.45rem);
+  color: var(--ink);
+}
+
+/* Now Playing Section */
+.now-playing-section {
+  margin-block: clamp(3rem, 10vw, 6rem);
+  padding: clamp(1.25rem, 5vw, 2.875rem);
+  border: var(--border-heavy) solid var(--ink);
+  border-radius: var(--radius);
+  background: #ffe4e6;
+  box-shadow: clamp(0.45rem, 1.8vw, 0.625rem) clamp(0.45rem, 1.8vw, 0.625rem) 0 var(--ink);
+  transform: rotate(-0.5deg);
+}
+
+.now-playing-section h2 {
+  font-family: Bangers, fantasy;
+  font-size: clamp(2.65rem, 13vw, 5.2rem);
+  text-shadow: 0.055em 0.055em 0 #fff;
+  margin-bottom: clamp(1.5rem, 5vw, 2.5rem);
+}
+
+.music-card {
+  display: grid;
+  gap: 1.25rem;
+  padding: clamp(1rem, 4vw, 1.5rem);
+  border: var(--border-heavy) solid var(--ink);
+  border-radius: var(--radius);
+  background: #fff;
+  box-shadow: 0.45rem 0.45rem 0 var(--ink);
+}
+
+.music-card-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.music-badge {
+  display: inline-flex;
+  padding: 0.4rem 0.8rem;
+  background: var(--pink);
+  border: var(--border-heavy) solid var(--ink);
+  border-radius: var(--radius);
+  font-family: Patrick Hand, cursive;
+  font-size: clamp(1rem, 3.5vw, 1.3rem);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.playlist-link-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: max(38px, var(--tap));
+  padding: 0.4rem 0.9rem;
+  background: var(--green);
+  color: #fff;
+  font-weight: 900;
+  font-size: clamp(0.8rem, 3vw, 0.95rem);
+  text-transform: uppercase;
+  border: var(--border-heavy) solid var(--ink);
+  border-radius: var(--radius);
+  box-shadow: 0.2rem 0.2rem 0 var(--ink);
+  cursor: pointer;
+  transition: transform 120ms ease, box-shadow 120ms ease;
+}
+
+.playlist-link-btn:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 0.25rem 0.25rem 0 var(--ink);
+}
+
+.music-player-container {
+  width: 100%;
+  border: var(--border-heavy) solid var(--ink);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: #17110f;
+  aspect-ratio: 16 / 9;
+  max-height: 152px;
+}
+
+@media (min-width: 48rem) {
+  .music-player-container {
+    aspect-ratio: auto;
+    height: 152px;
+  }
+}
+
+.music-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: 0;
+  color: #fff;
+  font-family: Patrick Hand, cursive;
+  font-size: 1.25rem;
+}
+
+/* Site Footer */
+.site-footer {
+  margin-top: clamp(4rem, 15vw, 8rem);
+  border-top: var(--border-heavy) solid var(--ink);
+  background: var(--ink);
+  color: var(--paper);
+  padding: clamp(3rem, 10vw, 5rem) var(--page-gutter) clamp(4rem, 12vw, 6rem);
+}
+
+.footer-content {
+  max-width: 61.25rem;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.footer-kicker {
+  color: var(--yellow);
+  font-family: Patrick Hand, cursive;
+  font-size: clamp(1.2rem, 5vw, 1.8rem);
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.footer-brand {
+  font-family: Bangers, fantasy;
+  font-size: clamp(3rem, 12vw, 4.8rem);
+  color: var(--yellow);
+  letter-spacing: 0.05em;
+  margin-bottom: 0.75rem;
+  text-shadow: 0.04em 0.04em 0 var(--pink);
+}
+
+.footer-tagline {
+  font-family: Patrick Hand, cursive;
+  font-size: clamp(1.25rem, 5vw, 1.85rem);
+  color: var(--paper);
+  max-width: 32rem;
+  margin-inline: auto;
+  margin-bottom: clamp(2rem, 6vw, 3rem);
+}
+
+.footer-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footer-actions .primary-action {
+  background: var(--yellow);
+  color: var(--ink);
+}
+
+.footer-actions .secondary-action {
+  background: transparent;
+  color: var(--paper);
+  border-color: var(--paper);
+}
+
+.footer-actions .secondary-action:hover {
+  background: rgba(255, 247, 219, 0.1);
+}
+
+.archive-item .kicker {
+  display: inline-flex;
+  align-self: start;
+  padding: 0.35rem 0.65rem;
+  background: var(--pink);
+  border: var(--border-heavy) solid var(--ink);
+  border-radius: var(--radius);
+  color: var(--ink);
+  font-family: Patrick Hand, cursive;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  box-shadow: 0.15rem 0.15rem 0 var(--ink);
+  line-height: 1;
+}
+
+.archive-line {
+  margin-block: 0.25rem;
+  font-size: clamp(1.1rem, 4vw, 1.35rem);
+}
+
+.archive-line.mood-tag {
+  color: var(--blue);
+  font-weight: bold;
 }

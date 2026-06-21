@@ -10,6 +10,11 @@
   "mood": "short mood line",
   "heroLine": "One-line punchline for archive cards.",
   "buttonLabel": "Close & Go Back to Void",
+  "nowPlaying": {
+    "label": "Currently obsessed with",
+    "embedUrl": "",
+    "type": "track"
+  },
   "body": [
     "Paragraph one.",
     "Paragraph two.",

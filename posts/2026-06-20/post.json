@@ -1,0 +1,104 @@
+{
+  "version": 1,
+  "published": true,
+  "date": "2026-06-20",
+  "time": "11:55 PM",
+  "day": 6,
+  "slug": "day-06-gym-failures-bullet-dreams-guilt-trips",
+  "title": "Day 06: Leg Day Humiliations, Harley Ambitions & The Bedside Feud",
+  "kicker": "20 June // Day 06",
+  "mood": "gym intimidation, comparison trap, midnight drama, conspiracy theories, final closure",
+  "heroLine": "Met a gym buddy named Balu. Talked about Harshith's 12 LPA. Got middle-of-the-night guilt trips from Vanilla.",
+  "buttonLabel": "Close & Go Back to Void",
+  "nowPlaying": {
+    "label": "Obsessed with (Gudiwada nightmares)",
+    "embedUrl": "https://open.spotify.com/track/4kV0ugCwyF7OAb3huIdThG?si=d570734daec14079",
+    "type": "track"
+  },
+  "body": [
+    "Leg day, guys. I bravely attempted to go to the gym, and yup, successfully went all alone. I even got a gym buddy—drum roll please—da da da da, his name is Balu! We used to play cricket together in 6th grade. But let me tell you about a super embarrassing moment. I completely fucked up deadlifts in front of a girl. For fuck's sake, I can't even lift 35kg properly. Surprisingly, there are kids coming in who just completed their 10th class and are in 11th. They are lifting 35kg easily, while I am struggling to complete my 25kg leg curls! These chota packets are doing 35kg, that too 3 sets of 15 reps each! 15 each!! In the end, I skipped the 10-minute climbing machine and just talked to Balu about Harshith. Harshith is the successful guy with a 12 LPA package in our cricket group. He earned a cool 3 Lakhs on his own and bought a Bullet. Great guy, full on inspiration. Not bragging about myself, but everyone has high expectations of me. If he got that, people expect me to get at least on par with him. At this point, I am disappointed in myself and have stopped coding completely. On the bright side, the sweat on my body through the gym lights was looking like diamonds on my skin—fully shiny, like a sparkling fitness model who can't lift 35kg.",
+    "Yesterday's drama queen, Vanilla, found a new way to destroy my peace. Now she is guilt-tripping me. Because I blocked her, she started calling me at 12 midnight. She asked for a screenshot of a message I sent, and I was shocked after seeing her text message. She has come up with a completely new drama: she is with her maternal uncle (Mama) in his bed, and he read all our messages. But she deleted one specific message where I had said, 'No body knows what ever u did.' Now her Mama thinks she is trying to blackmail me with sex-related topics, and that's why I blocked her! It took me time to digest this. We are nowhere near that—she literally calls me brother! I really think it is just a small trick to make me feel guilty, it's not true at all. She has tried this several times before. And you know what happened at the end? She left me on seen! <strong style=\"color: #f04438; background: rgba(240, 68, 56, 0.08); padding: 4px 8px; border-radius: 4px;\">WTF does she even want? She calls me asking for a screenshot, I tell her I am ready to speak to her fiancé and show all chats and payments, and then she just leaves the chat!</strong> All these girls from my +1 and +2, literally all of them, are a complete nightmare to me. I really hate Gudiwada and the people from there.",
+    "On a final note, TSITP is officially completed. In Season 3, they are giving us all the reasons to hate Jeremiah now. I am absolutely sure there will be no Team Jellyfish after Season 3—everyone will be on Team Conrad. But I really wish the producers would stop at Season 3 instead of dragging it out with new seasons without any book script left. They gave a happy ending to everyone, and it's satisfying. Let it rest, guys."
+  ],
+  "scraps": [
+    {
+      "type": "image",
+      "stamp": "01",
+      "size": "big",
+      "tone": "gym",
+      "title": "Gym Humiliations & Old Friends",
+      "text": "Met Balu from 6th grade, failed a 35kg deadlift in front of a girl, and watched 10th-grade kids lift more than me.",
+      "image": {
+        "src": "posts/2026-06-20/gym-failure-analog.webp",
+        "alt": "Analog polaroid photo of gym dumbbells",
+        "width": 1024,
+        "height": 1024,
+        "fit": "cover"
+      }
+    },
+    {
+      "type": "image",
+      "stamp": "02",
+      "size": "big",
+      "tone": "chaos",
+      "title": "The Midnight Bedside Plot",
+      "text": "Calls at 12 midnight, deleted texts, and a bizarre blackmail narrative involving her Mama's bed.",
+      "image": {
+        "src": "posts/2026-06-20/whatsapp-guilt-trip.webp",
+        "alt": "Screenshot of WhatsApp conversation about debt collections and blackmail",
+        "width": 649,
+        "height": 717,
+        "fit": "contain"
+      }
+    },
+    {
+      "type": "image",
+      "stamp": "03",
+      "size": "big",
+      "tone": "note",
+      "title": "Harshith's Bullet & Comparison",
+      "text": "12 LPA and a self-bought Bullet motorcycle. The expectations are high, and my coding is paused.",
+      "image": {
+        "src": "posts/2026-06-20/bullet-bike-aspiration.webp",
+        "alt": "Analog polaroid photo of a vintage Royal Enfield Bullet motorcycle",
+        "width": 1024,
+        "height": 1024,
+        "fit": "cover"
+      }
+    },
+    {
+      "type": "note",
+      "stamp": "04",
+      "tone": "receipt",
+      "title": "The Gudiwada Nightmare",
+      "text": "All these girls from my +1 and +2, literally all of them, are a complete nightmare to me. I really hate Gudiwada and the people from there."
+    }
+  ],
+  "gallery": [
+    {
+      "src": "posts/2026-06-20/gym-failure-analog.webp",
+      "tone": "gym",
+      "alt": "Analog gym dumbbells",
+      "width": 1024,
+      "height": 1024,
+      "caption": "Deadlifts failure in front of a girl. Motivation: expired."
+    },
+    {
+      "src": "posts/2026-06-20/whatsapp-guilt-trip.webp",
+      "tone": "chaos",
+      "alt": "WhatsApp screenshot of the bedside feud",
+      "width": 649,
+      "height": 717,
+      "caption": "Midnight calls and deleting chats to spin a new narrative.",
+      "fit": "contain"
+    },
+    {
+      "src": "posts/2026-06-20/bullet-bike-aspiration.webp",
+      "tone": "note",
+      "alt": "A vintage motorcycle in street lights",
+      "width": 1024,
+      "height": 1024,
+      "caption": "Harshith's Bullet motorcycle. Comparison is the thief of joy."
+    }
+  ]
+}

@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "build": "mkdir -p dist && cp -r index.html archive.html styles.css script.js assets posts dist"
+  },
   "dependencies": {
     "sharp": "^0.35.2"
   }

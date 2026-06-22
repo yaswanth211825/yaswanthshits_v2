@@ -2,6 +2,12 @@
   "version": 1,
   "posts": [
     {
+      "date": "2026-06-21",
+      "slug": "day-07-deadlift-soreness-mustang-realities-cool-mission",
+      "path": "posts/2026-06-21/post.json",
+      "published": true
+    },
+    {
       "date": "2026-06-20",
       "slug": "day-06-gym-failures-bullet-dreams-guilt-trips",
       "path": "posts/2026-06-20/post.json",

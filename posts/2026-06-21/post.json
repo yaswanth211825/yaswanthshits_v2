@@ -1,0 +1,81 @@
+{
+  "version": 1,
+  "published": true,
+  "date": "2026-06-21",
+  "time": "11:55 PM",
+  "day": 7,
+  "slug": "day-07-deadlift-soreness-mustang-realities-cool-mission",
+  "title": "Day 07: The Soreness Loop, Twin Delusions & Starting Mission Cool",
+  "kicker": "21 June // Day 07",
+  "mood": "glute soreness, mirror matching, first classmate vibes, self-realization, caution sign",
+  "heroLine": "Deadlift hangover is real. Checked characteristics, realized I am completely delusional. Commencing Mission Cool.",
+  "buttonLabel": "Close & Go Back to Void",
+  "nowPlaying": {
+    "label": "Obsessed with (Mustang dedication exemption)",
+    "embedUrl": "https://open.spotify.com/track/6kwtPUBq5Y7kMR4P4CnEz6?si=ccf74aa4f398425e",
+    "type": "track"
+  },
+  "body": [
+    "Rest day today, but I am feeling the pain straight through my back, glutes, and thighs. I guess yesterday's deadlifts are the main culprit here. Today: no movies, no series. I was so tired that I slept at 10 PM and woke up at 3 AM. Now, I am writing this blog at 4 AM—actually, it's the morning of the 22nd. The whole day has been a loop: wake up at 8, eat food, chat, sleep, eat food, chat, sleep.",
+    "There is no drama today, guys. But Mustang wants more clarity to move on, I guess. I've been a jerk, a desperate simp, and a friend all at the same time. At some point, she inspired me. Birthday twins—destiny? She is so similar to me, or at least my older self. Let's list the similarities:<br>• <del>Innocent & introverted exterior, but extroverted and raw on the inside.</del><br>• <del>Shuts off people immediately when she feels like it.</del><br>• <del>Tries to be alone but not lonely. Minds her own business (I wasn't that confident in B.Tech, but in +1 & +2 I was).</del><br>• <del>Plans study times and writes diary entries randomly, not daily.</del><br>• <del>Full of curiosity (mottam gelikesthadhi) and writes detailed explanation notes.</del><br><br><strong style=\"color: #f04438; background: rgba(240, 68, 56, 0.08); padding: 6px 10px; border-radius: 6px; display: inline-block; border-left: 4px solid #f04438; margin-block: 8px;\">When I started listing these characteristics, I realized I am fucking delusional. I get it now. So, start writing about your day and you'll get more clarity about your life. That's the lesson of the day.</strong>",
+    "But I think she's kinda cool though—a different type of cool. Another classmate from 1st sem, Shenny, is a completely different kind of cool: concerts, expensive sneakers, clubs, posh restaurants, trips, and Range Rovers. I was invisible to her in 1st sem, but I started having fun from 4th sem. In my defense, I went on fewer trips, but guys, every trip was an adventure and fucking awesome. I just became such a private person that I never posted stories about anything. Coming back to Mustang, as I said previously, she has a precarious strong shield that pushes away boys. At some point I acted cringe—I even said she is in the sky, referring to her as the moon (I didn't even remember that till yesterday; I was probably drunk when I said it). She asked for my opinion, and I told her all good things. But opinions change, humans change. The bad part is she blocked me one night, and till today I don't know what was in her mind. From that day, my opinion completely changed. She's just like all typical Telugu girls; Gudiwada girls are 100% Aunties by their characteristics. But Mustang, let's say: 30% Crazy, 20% Aunty, 50% Cool. From that day, I am cautious. Most of the time I am just being myself, but until we touch personal stuff, we are strangers. I should be more formal and cautious around her. She is very particular about words—even a joke. She remembers for a lifetime and documents it.",
+    "So, my honest suggestion: never think of a person as a friend whom you talk to more on chat than in real life. The person behind your phone is never the person in real life. Today ended with zero emotions. But yeah, Mustang reminded me that she thought I was a weirdo—that was her first impression. So, starting Monday, we commence Mission: Cool. PS: Mustang, if you ever read this, trust me, I will never dedicate this song to you at any cost. But yeah, you look like Sai Pallavi a bit, that is acceptable."
+  ],
+  "scraps": [
+    {
+      "type": "image",
+      "stamp": "01",
+      "size": "big",
+      "tone": "note",
+      "title": "Struck-Through Similarities",
+      "text": "Listed characteristics of my birthday twin, only to realize I was completely delusional.",
+      "image": {
+        "src": "posts/2026-06-21/birthday-twins-delusion.webp",
+        "alt": "An open diary with text crossed out and a fountain pen resting on it",
+        "width": 1024,
+        "height": 1024,
+        "fit": "cover"
+      }
+    },
+    {
+      "type": "image",
+      "stamp": "02",
+      "size": "big",
+      "tone": "chaos",
+      "title": "A Different Kind of Cool",
+      "text": "Concerts, expensive sneakers, clubs, and trips. Shenny's style vs my private adventures.",
+      "image": {
+        "src": "posts/2026-06-21/expensive-sneakers-culture.webp",
+        "alt": "A close up photo of expensive street sneakers next to glowing neon signs",
+        "width": 1024,
+        "height": 1024,
+        "fit": "cover"
+      }
+    },
+    {
+      "type": "note",
+      "stamp": "03",
+      "tone": "receipt",
+      "title": "Real vs Chat",
+      "text": "Never think of a person as a friend whom you talk to more on chat than in real life. The person behind the phone is never the person in real life."
+    }
+  ],
+  "gallery": [
+    {
+      "src": "posts/2026-06-21/birthday-twins-delusion.webp",
+      "tone": "note",
+      "alt": "Open diary page with red crossed out lines",
+      "width": 1024,
+      "height": 1024,
+      "caption": "The delusional checklist. Diary entries tell no lies."
+    },
+    {
+      "src": "posts/2026-06-21/expensive-sneakers-culture.webp",
+      "tone": "chaos",
+      "alt": "Sneakers under neon lights",
+      "width": 1024,
+      "height": 1024,
+      "caption": "Shenny's 1st sem invisible barrier. Expensive sneakers and concert vibes."
+    }
+  ]
+}

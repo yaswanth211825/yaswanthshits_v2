@@ -2,6 +2,12 @@
   "version": 1,
   "posts": [
     {
+      "date": "2026-06-22",
+      "slug": "day-08-diamond-armor-sweat-procrastination-anxieties",
+      "path": "posts/2026-06-22/post.json",
+      "published": true
+    },
+    {
       "date": "2026-06-21",
       "slug": "day-07-deadlift-soreness-mustang-realities-cool-mission",
       "path": "posts/2026-06-21/post.json",

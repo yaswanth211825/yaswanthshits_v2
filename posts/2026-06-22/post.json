@@ -1,0 +1,79 @@
+{
+  "version": 1,
+  "published": true,
+  "date": "2026-06-22",
+  "time": "11:55 PM",
+  "day": 8,
+  "slug": "day-08-diamond-armor-sweat-procrastination-anxieties",
+  "title": "Day 08: Diamond Armor Gym Shine, Broken Promises & Paranoia Detox",
+  "kicker": "22 June // Day 08",
+  "mood": "high confidence, diamond sweat, developer guilt, demographic shock, fast-breaking simpery",
+  "buttonLabel": "Close & Go Back to Void",
+  "nowPlaying": {
+    "label": "Obsessed with (Victory Lap choice)",
+    "embedUrl": "https://open.spotify.com/track/6pG9X3nTo02BbtPXfOkd3u?utm_source=generator",
+    "type": "track"
+  },
+  "body": [
+    "Great day, guys. As I hinted in my last rant, I am actually feeling a sliver of confidence in myself. Behold the gym mirror selfie: I initially wanted to play Rihanna's 'Diamonds' for this picture to match the vibe, but then my brain flagged it as 'too feminine.' Since I must maintain my raw, fragile masculinity at all costs, I chose Nipsey Hussle's 'Victory Lap' instead. But let's talk about the science of my skin: the sweat on my face and body under the gym lights was reflecting so hard that the droplets literally looked like diamonds. I am not kidding—I looked like I was fully geared up in Minecraft diamond armor. I realized it's time to upsell myself. Look at that shiny, diamond-plated warrior in the Reebok tee who still can't lift 35kg properly. Peak performance.",
+    "But let's pivot to my stellar integrity. I previously gave a solemn promise to Mustang that I would learn web development and build a website for her. Flash forward to today: that promise has been officially filed into the garbage bin. Every single day, my schedule for coding is: plan to start, feel guilty, open a sitcom, and do absolutely nothing. The procrastination loop is undefeated. We need to stop this at any cost—seriously, my future career depends on it. Let's see what happens tomorrow, but if history is any indicator, I'll probably just write another blog entry complaining about my laziness.",
+    "Now, let's talk about my sudden, irrational gym paranoia. Today, I walked into the gym and realized that almost every member present was Muslim, and the gym itself is owned by a Muslim. I only noticed this because literally not a single friend I know was there today. It instantly triggered this weird, irrational scare in my head. I'm not saying I hate it, but my brain went full-on dramatic survivor mode. If anyone reading this in the future wants to jump to conclusions and call me Islamophobic, please hold your horses and keep your opinions to yourself. My first true love was a Muslim girl! For fuck's sake, I was such a legendary simp that I actually did the full Ramzan fasting with her! Yes, I was that lame. So trust me, I don't hate anyone—I'm just a guy who gets startled by his own shadow in a room full of strangers."
+  ],
+  "scraps": [
+    {
+      "type": "image",
+      "stamp": "01",
+      "size": "big",
+      "tone": "gym",
+      "title": "Diamond Armor Selfie",
+      "text": "Sweat droplets under the gym lights looking like diamonds. Rihanna vibe, but with Victory Lap masculinity.",
+      "image": {
+        "src": "posts/2026-06-22/gym-selfie-shine.webp",
+        "alt": "Mirror selfie of Yaswanth in Reebok t-shirt sweating at the gym",
+        "width": 768,
+        "height": 1024,
+        "fit": "cover"
+      }
+    },
+    {
+      "type": "image",
+      "stamp": "02",
+      "size": "big",
+      "tone": "note",
+      "title": "Web Dev Promise Garbage",
+      "text": "Promised Mustang a website, got a lifetime subscription to procrastination instead.",
+      "image": {
+        "src": "posts/2026-06-22/web-development-procrastination.webp",
+        "alt": "Laptop displaying HTML code next to crumpled papers",
+        "width": 1024,
+        "height": 1024,
+        "fit": "cover"
+      }
+    },
+    {
+      "type": "note",
+      "stamp": "03",
+      "tone": "receipt",
+      "title": "The Simp Credentials",
+      "text": "For those calling me names: I did the full Ramzan fasting for my first love. S-level simping registered."
+    }
+  ],
+  "gallery": [
+    {
+      "src": "posts/2026-06-22/gym-selfie-shine.webp",
+      "tone": "gym",
+      "alt": "Mirror selfie of Yaswanth in Reebok t-shirt",
+      "width": 768,
+      "height": 1024,
+      "caption": "Diamond sweat drops. Minecraft armor unlocked."
+    },
+    {
+      "src": "posts/2026-06-22/web-development-procrastination.webp",
+      "tone": "note",
+      "alt": "Messy desk with HTML code on laptop screen",
+      "width": 1024,
+      "height": 1024,
+      "caption": "The web dev promise to Mustang. Currently in trash."
+    }
+  ]
+}
